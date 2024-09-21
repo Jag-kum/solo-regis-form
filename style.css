@@ -1,0 +1,287 @@
+*,*::before,::after{
+    box-sizing: border-box;
+    font-family:  sans-serif,Helvetica ;
+}
+
+
+body {
+    margin: 0;  }
+  
+  .background {
+    background-image: url(bgform.png);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+
+  #main-heading{
+    font-size: 5rem;
+    font-family: Goldman , sans-serif;
+    text-align: center;
+    max-width: 950px;
+    font-weight: 400;
+    color: white;
+  }
+
+.container {
+    backdrop-filter: blur(100px);
+border-radius: 16px;
+margin-top: 10px;
+
+background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+  }
+  /* Styling for the global error container */
+#error-container {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    border: 1px solid red; /* Red border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the error box */
+    margin-bottom: 15px; /* Space between the error box and the form */
+    display: none; /* Initially hidden */
+}
+
+/* Individual error messages inside the error container */
+#error-container p {
+    color: red; /* Red text for errors */
+    font-size: 1rem; /* Adjust font size */
+    margin: 0; /* Remove default margins */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Optional: Make sure form fields have spacing from the error container */
+.details {
+    margin-top: 20px; /* Add some space between the form and the error container */
+}
+
+
+
+  #second-heading{
+    margin: 0;
+    background: linear-gradient(89.74deg, #FFFFFF 0.22%, #AA61D7 110.3%);
+  -webkit-background-clip: text;   /* Ensures the background applies only to the text */
+  -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+  }
+
+
+
+  .form-group {
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: none;
+  }
+  
+ input[type="text"],
+textarea {
+    font-weight: none;
+  width: 100%;
+padding: 5px 5px 5px 0px;
+  background-color: transparent; 
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 5px 5px 5px 0px;
+  background-color: transparent; 
+   border: none;
+border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 16px;
+  color: #fff; 
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  color: #747474; 
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #fffef4; 
+  background-color: transparent;
+}
+
+input[type="tel"]:focus {
+  outline: none;
+  border-color: #fffef4; 
+  background-color: transparent;
+}
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+    font-family: "Cabin";
+  }
+
+  .form-group.buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    box-shadow: 0px 26px 58.7px -25px #d447f7;
+border-radius: 12px;
+box-sizing: border-box;
+color: white;
+background: rgba(255, 255, 255, 0.1)    ;
+backdrop-filter: blur(100px);
+border: 1px solid #fff;
+    padding: 10px 20px;
+    width: 180px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+  
+  button:hover {
+    background-color: #555;
+    color: black;
+  }
+  
+  button#submitBtn {
+
+    background-color: #2e2e2ea5;;
+    
+  }
+
+
+
+  
+  button#submitBtn:hover {
+    background-color: #a9a7a7;
+  }
+  
+  .submit-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1f1f1f88;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: rgb(195, 195, 195);
+    text-align: center;
+  }
+  
+  .submit-message p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  /* @media (max-width: 600px) {
+    .form-container {
+      padding: 20px;
+    }
+    .background{
+      background-position: inherit;
+
+    }
+    #main-heading{
+      font-size: 3.5rem;
+    }
+    .container{
+        top:1px;
+    }
+    button {
+      padding: 10px 15px;
+    }
+  } */
+   @media screen and (max-width: 1200px) {
+    #main-heading {
+        font-size: 4rem;
+    }
+
+    #second-heading {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        max-width: 800px;
+        padding: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-heading {
+        font-size: 3rem;
+    }
+
+    #second-heading {
+        font-size: 2rem;
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 15px;
+    }
+
+    button {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-heading {
+        font-size: 3rem;
+        
+    }
+
+    #second-heading {
+        font-size: 1.5rem;
+    }
+
+    .container {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 100px;
+        max-width: 90%;
+        padding: 10px;
+        height: 450px;
+        justify-content: center;
+        padding-top: 15%;
+    }
+
+    button {
+        width: 120px;
+        font-size: 12px;
+    }
+    .background{
+      background-position: inherit;
+      
+    }
+}
+
