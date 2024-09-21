@@ -96,8 +96,9 @@ function validatePhoneNumber(phone) {
 }
 
 function displaySuccessMessage(message) {
+  const successContainer = document.getElementById("success-container");
   const successMsg = document.createElement("p");
-  successMsg.style.color = "green";
   successMsg.textContent = message;
-  document.querySelector(".details").appendChild(successMsg);
+  successContainer.appendChild(successMsg);
+  successContainer.style.display = "block"; 
 }

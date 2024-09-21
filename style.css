@@ -39,27 +39,50 @@ background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 950px;
   }
-  /* Styling for the global error container */
 #error-container {
-    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
-    border: 1px solid red; /* Red border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px 15px; /* Padding inside the error box */
-    margin-bottom: 15px; /* Space between the error box and the form */
-    display: none; /* Initially hidden */
+    background-color: rgba(255, 0, 0, 0.1); 
+    border: 1px solid red; 
+    border-radius: 8px;
+    padding: 10px 15px; 
+    margin-top: 2%;
+    margin-bottom: 2%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    display: none; 
+    align-items: center;
+    text-align: center;
 }
 
-/* Individual error messages inside the error container */
 #error-container p {
-    color: red; /* Red text for errors */
-    font-size: 1rem; /* Adjust font size */
-    margin: 0; /* Remove default margins */
-    line-height: 1.5; /* Line height for readability */
+    color: red; 
+    font-size: 1rem; 
+    margin: 0; 
+    line-height: 1.5; 
 }
 
-/* Optional: Make sure form fields have spacing from the error container */
+#success-container {
+  background-color: rgba(0, 255, 0, 0.1); 
+  border: 1px solid green; 
+  border-radius: 8px;
+    padding: 10px 15px; 
+    margin-top: 2%;
+    margin-bottom: 2%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    display: none; 
+    align-items: center;
+    text-align: center;
+}
+
+#success-container p {
+  color: green; 
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
 .details {
-    margin-top: 20px; /* Add some space between the form and the error container */
+    margin-top: 20px; 
 }
 
 
@@ -67,7 +90,7 @@ background-color: rgba(255, 255, 255, 0.1);
   #second-heading{
     margin: 0;
     background: linear-gradient(89.74deg, #FFFFFF 0.22%, #AA61D7 110.3%);
-  -webkit-background-clip: text;   /* Ensures the background applies only to the text */
+  -webkit-background-clip: text;   
   -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 3rem;
